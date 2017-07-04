@@ -1,2 +1,4 @@
-## 1주차
-[week1](https://github.com/LeFal/boostcamp_iOS_LeFal/tree/master/week1)
+## iOS과정 - 오형준(LeFal)
+
+### 1주차 과제
+* week1 - [링크](https://github.com/LeFal/boostcamp_iOS_LeFal/tree/master/week1)
