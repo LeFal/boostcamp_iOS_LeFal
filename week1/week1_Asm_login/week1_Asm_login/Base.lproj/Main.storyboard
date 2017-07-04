@@ -21,79 +21,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Vs-4C-9FK">
-                                <rect key="frame" x="67" y="179" width="240" height="309"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jjx-iv-FNf">
+                                <rect key="frame" x="67" y="203.5" width="240" height="260"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jjx-iv-FNf">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="309"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="t7V-RV-j2S">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="215"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="t7V-RV-j2S">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="264"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-Bd-tM4">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="h38-ez-a7c"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="n0N-pn-ym0">
+                                                <rect key="frame" x="0.0" y="140" width="240" height="75"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="28435487" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-Bd-tM4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="149"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="240" id="h38-ez-a7c"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="n0N-pn-ym0">
-                                                        <rect key="frame" x="0.0" y="189" width="240" height="75"/>
-                                                        <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D74-pX-zc4">
-                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
-                                                                <nil key="textColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yd0-SV-CEn">
-                                                                <rect key="frame" x="0.0" y="45" width="240" height="30"/>
-                                                                <nil key="textColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="75" id="Hm2-Ao-1ik"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cnh-4H-1K4">
-                                                <rect key="frame" x="0.0" y="279" width="240" height="30"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6g-sQ-6Mj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
-                                                        <state key="normal" title="Sign In"/>
-                                                        <connections>
-                                                            <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6u-iE-MWC"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgW-WI-aMx">
-                                                        <rect key="frame" x="120" y="0.0" width="120" height="30"/>
-                                                        <state key="normal" title="Sign Up">
-                                                            <color key="titleColor" red="1" green="0.0093617555427757404" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pq5-oR-yhc"/>
-                                                        </connections>
-                                                    </button>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D74-pX-zc4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yd0-SV-CEn">
+                                                        <rect key="frame" x="0.0" y="45" width="240" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="lzl-qY-d2I"/>
+                                                    <constraint firstAttribute="height" constant="75" id="Hm2-Ao-1ik"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cnh-4H-1K4">
+                                        <rect key="frame" x="0.0" y="230" width="240" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6g-sQ-6Mj">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                                <state key="normal" title="Sign In"/>
+                                                <connections>
+                                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6u-iE-MWC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgW-WI-aMx">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="30"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" red="1" green="0.0093617555427757404" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pq5-oR-yhc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="lzl-qY-d2I"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="309" id="p6K-Jh-mEt"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Vs-4C-9FK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Cj-hr-CsE"/>
-                            <constraint firstItem="9Vs-4C-9FK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKV-kY-GGg"/>
+                            <constraint firstItem="jjx-iv-FNf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kE7-60-4C4"/>
+                            <constraint firstItem="jjx-iv-FNf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rQC-vt-gA2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -107,6 +99,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="28435487" width="100" height="100"/>
+        <image name="Logo" width="100" height="100"/>
     </resources>
 </document>

@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBAction func signIn(_ sender: Any) {
         if let id = self.ID.text, let password = self.password.text {
             print("touch up inside - sign in")
+            
             print("ID : \(id), PW : \(password)")
         } else{
             print("touch up inside - sign in")
