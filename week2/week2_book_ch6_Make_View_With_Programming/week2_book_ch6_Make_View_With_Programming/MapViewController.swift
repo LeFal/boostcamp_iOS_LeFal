@@ -80,7 +80,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let pin = MKPointAnnotation()
         pin.coordinate = CLLocationCoordinate2D(latitude: 11.12, longitude: 12.11)
         mapView.addAnnotation(pin)
-        
-        
+        //
     }
 }
