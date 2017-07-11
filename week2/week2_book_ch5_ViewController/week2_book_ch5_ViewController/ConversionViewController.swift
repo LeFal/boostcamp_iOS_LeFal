@@ -12,6 +12,19 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celsiusLabel : UILabel!
     @IBOutlet var fahrenheitTextField : UITextField!
     
+    let backgroundColor : [UIColor] = [.white, .black]
+    var changeBackgroundColor = 0
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.view.backgroundColor = backgroundColor[changeBackgroundColor]
+        self.fahrenheitTextField.attributedPlaceholder  = NSAttributedString(string: fahrenheitTextField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.blue])
+        if changeBackgroundColor == 0 {
+            changeBackgroundColor = 1
+        }else{
+            changeBackgroundColor = 0
+        }
+    }
+    
     var fahrenheitValue : Double? {
         didSet{
             updateCelsiusLabel()
