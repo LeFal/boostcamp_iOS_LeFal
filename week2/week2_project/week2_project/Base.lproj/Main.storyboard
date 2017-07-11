@@ -267,6 +267,7 @@
                                             <constraint firstItem="N3V-M5-K8Y" firstAttribute="top" secondItem="bOo-9M-pI4" secondAttribute="bottom" constant="19" id="K14-aS-9h8"/>
                                             <constraint firstItem="gzN-b7-kUB" firstAttribute="trailing" secondItem="l6M-q7-P6S" secondAttribute="trailing" id="K8G-ZC-CvR"/>
                                             <constraint firstItem="H0z-aY-4sE" firstAttribute="height" secondItem="f4G-Vb-55J" secondAttribute="height" id="MGF-FE-p8p"/>
+                                            <constraint firstAttribute="height" constant="667" id="Pyk-xU-PJS"/>
                                             <constraint firstItem="H0z-aY-4sE" firstAttribute="leading" secondItem="f4G-Vb-55J" secondAttribute="leading" id="RLp-AI-SR9"/>
                                             <constraint firstItem="H0z-aY-4sE" firstAttribute="trailing" secondItem="f4G-Vb-55J" secondAttribute="trailing" id="Rv3-HA-h0M"/>
                                             <constraint firstItem="f4G-Vb-55J" firstAttribute="top" secondItem="aXx-sO-qja" secondAttribute="bottom" constant="40" id="XlG-W4-gZw"/>
@@ -284,7 +285,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="aqf-Gx-53y" firstAttribute="height" secondItem="4L3-Cl-fTX" secondAttribute="height" id="7G8-bg-iK9"/>
                                     <constraint firstItem="aqf-Gx-53y" firstAttribute="width" secondItem="4L3-Cl-fTX" secondAttribute="width" id="ivT-EF-aop"/>
                                     <constraint firstAttribute="bottom" secondItem="aqf-Gx-53y" secondAttribute="bottom" id="lDC-7S-91f"/>
                                     <constraint firstItem="aqf-Gx-53y" firstAttribute="leading" secondItem="4L3-Cl-fTX" secondAttribute="leading" id="pgw-XP-csC"/>
