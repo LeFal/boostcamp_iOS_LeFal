@@ -282,7 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 34UH748CF3;
-				INFOPLIST_FILE = week2_book_ch4_WorldTrotter/Info.plist;
+				INFOPLIST_FILE = week2_book_ch5_ViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LeFal.week2-book-ch5-ViewController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 34UH748CF3;
-				INFOPLIST_FILE = week2_book_ch4_WorldTrotter/Info.plist;
+				INFOPLIST_FILE = week2_book_ch5_ViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LeFal.week2-book-ch5-ViewController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
