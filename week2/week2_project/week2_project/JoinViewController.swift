@@ -11,7 +11,6 @@ import UIKit
 class JoinViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextViewDelegate, UITextFieldDelegate {
     
     @IBOutlet var scrollView: UIScrollView!
-
     @IBOutlet var profileImageView: UIImageView!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -169,6 +168,7 @@ class JoinViewController: UIViewController, UINavigationControllerDelegate, UIIm
         }
         scrollView.setContentOffset(CGPoint(x:0,y:0), animated: true)
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
