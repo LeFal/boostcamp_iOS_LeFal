@@ -21,9 +21,10 @@ class ViewController: UIViewController {
         view.addSubview(button)
         
         
-        disableButton = UIButton(frame: CGRect(x: 50, y: 50, width: 100, height: 20))
-        disableButton.titleLabel?.text = "disable"
-        disableButton.backgroundColor = .gray
+        disableButton = UIButton(frame: CGRect(x: 50, y: 50, width: 100, height: 50))
+        disableButton.center = CGPoint(x: 50, y: 50)
+        disableButton.setTitle("Test Button", for: .normal)
+        disableButton.backgroundColor = .blue
         disableButton.addTarget(self, action: #selector(toggleEnableAndDisable), for: .touchUpInside)
         view.addSubview(disableButton)
     }
@@ -31,10 +32,10 @@ class ViewController: UIViewController {
     func toggleEnableAndDisable()  {
         if self.button.isEnable{
             self.button.makeDisable()
-            disableButton.titleLabel?.text = "Enable"
+            disableButton.setTitle("Enable", for: .normal)
         } else{
             self.button.makeEnable()
-            disableButton.titleLabel?.text = "disable"
+            disableButton.setTitle("Disable", for: .normal)
         }
     }
 

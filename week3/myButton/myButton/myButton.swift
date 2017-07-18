@@ -11,19 +11,24 @@ import UIKit
 class MyButton : UIView {
     var isEnable : Bool = true
     var isSelected : Bool = false
+    
     var titleLabel = UILabel()
-    var backgroundImage : UIImageView?
+    var backgroundImage = UIImageView()
     var beforeState = UIControlState()
     var currentState = UIControlState()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         titleLabel.frame = CGRect(x: 100, y: 0, width: 200, height: 21)
-        titleLabel.center = CGPoint(x: 50, y: 50)
+        titleLabel.center = CGPoint(x: frame.width/2, y: frame.width/2)
         titleLabel.textAlignment = .center
         titleLabel.text = "normal"
-        super.backgroundColor = .gray
+        
+        backgroundImage.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        backgroundImage.backgroundColor = .white
+        
         self.addSubview(titleLabel)
+        self.addSubview(backgroundImage)
     }
     
     required init?(coder aDecoder: NSCoder) {
