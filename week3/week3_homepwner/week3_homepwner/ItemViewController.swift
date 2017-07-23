@@ -45,6 +45,7 @@ class ItemViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemStore.allItems.count + 1
     }
+  
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -56,6 +57,12 @@ class ItemViewController: UITableViewController {
             cell.nameLabel.text = item.name
             cell.serialNumberLabel.text = item.serialNumber
             cell.valueLabel.text = "$\(item.valueInDollars)"
+            
+            if item.valueInDollars > 50 {
+                cell.backgroundColor = .green
+            }else{
+                cell.backgroundColor = .red
+            }
             
             return cell
 
@@ -121,6 +128,4 @@ class ItemViewController: UITableViewController {
             return proposedDestinationIndexPath
         }
     }
-    
-    
 }
