@@ -19,13 +19,11 @@ class PlayViewController: UIViewController {
     var elapsedTime: TimeInterval = 0
     var buttons : [UIButton] = []
     
-    @IBOutlet var gameBoardHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         timeLabel.text = "00:00.00"
         gameCounter = 1
-        //gameBoardHeight.constant = gameBoard.frame.width
     }
     
     override func viewWillAppear(_ animated: Bool) {
