@@ -19,11 +19,13 @@ class PlayViewController: UIViewController {
     var elapsedTime: TimeInterval = 0
     var buttons : [UIButton] = []
     
+    @IBOutlet var gameBoardHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         timeLabel.text = "00:00.00"
         gameCounter = 1
+        //gameBoardHeight.constant = gameBoard.frame.width
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,7 +51,6 @@ class PlayViewController: UIViewController {
     func timeIntervalToString(interval : TimeInterval) -> String {
         
         let onlySecond = Int(interval)
-        
         let ms = Int((interval.truncatingRemainder(dividingBy: 1)) * 100)
         let seconds = onlySecond % 60
         let minutes = (onlySecond / 60) % 60
@@ -73,7 +74,7 @@ class PlayViewController: UIViewController {
         var x = 0
         var y = 0
         let btnHeightAndWidth = 54
-        let spaceBetweenBtn = 15
+        let spaceBetweenBtn = 12
         
         for _ in 1...5 {
             x = 0
@@ -108,6 +109,7 @@ class PlayViewController: UIViewController {
             buttonTitle = "" + "\(pickedNum)"
             buttons[i].setTitle(buttonTitle, for: .normal)
         }
+        
     }
 
     
@@ -120,7 +122,16 @@ class PlayViewController: UIViewController {
             timer?.invalidate()
             tapToStartButton.isHidden = false
             
-            // 다시 작업시작
+            let getUserName = UIAlertController(title: "기록", message: nil, preferredStyle: .alert)
+            getUserName.addTextField { (textField: UITextField) in
+                textField.placeholder = "이름을 입력하세요."
+            }
+            let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+            getUserName.addAction(ok)
+            
+            self.present(getUserName, animated: true, completion: nil)
+            buttons.removeAll()
+            gameCounter = 1
         }
         
     }
