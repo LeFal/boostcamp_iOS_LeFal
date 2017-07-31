@@ -13,11 +13,6 @@ class ItemViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        
-        let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
-        tableView.contentInset = insets
-        tableView.scrollIndicatorInsets = insets
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 65
     }
@@ -30,21 +25,18 @@ class ItemViewController: UITableViewController {
         }
     }
     
-    @IBAction func toggleEditingMode(_ sender: AnyObject) {
-        if isEditing {
-            sender.setTitle("Edit", for: .normal)
-            setEditing(false, animated: true)
-        }
-        else {
-            sender.setTitle("Done", for: .normal)
-            setEditing(true, animated: true)
-        }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        navigationItem.leftBarButtonItem = editButtonItem
     }
+    
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemStore.allItems.count + 1
     }
+    
   
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -126,6 +118,16 @@ class ItemViewController: UITableViewController {
         }
         else {
             return proposedDestinationIndexPath
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowItem" {
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let item = itemStore.allItems[row]
+                let detailController = segue.destination as! DetailViewController
+                detailController.item = item
+            }
         }
     }
 }

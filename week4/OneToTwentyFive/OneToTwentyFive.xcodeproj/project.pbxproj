@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA81B90E1F25D40400C7817E /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81B90D1F25D40400C7817E /* Record.swift */; };
+		DA81B9101F25DBA200C7817E /* RecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81B90F1F25DBA200C7817E /* RecordStore.swift */; };
 		DA91AEBE1F24713E006DC436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91AEBD1F24713E006DC436 /* AppDelegate.swift */; };
 		DA91AEC31F24713E006DC436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA91AEC11F24713E006DC436 /* Main.storyboard */; };
 		DA91AEC51F24713E006DC436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA91AEC41F24713E006DC436 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA81B90D1F25D40400C7817E /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		DA81B90F1F25DBA200C7817E /* RecordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordStore.swift; sourceTree = "<group>"; };
 		DA91AEBA1F24713E006DC436 /* OneToTwentyFive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneToTwentyFive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA91AEBD1F24713E006DC436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA91AEC21F24713E006DC436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA81B9111F25E53D00C7817E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA81B90D1F25D40400C7817E /* Record.swift */,
+				DA81B90F1F25DBA200C7817E /* RecordStore.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DA81B9121F25E53F00C7817E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA91AECF1F2474A3006DC436 /* HomeViewController.swift */,
+				DA91AED11F2474C1006DC436 /* PlayViewController.swift */,
+				DA91AED31F2474F1006DC436 /* HistoryViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		DA91AEB11F24713E006DC436 = {
 			isa = PBXGroup;
 			children = (
@@ -59,10 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				DA91AEBD1F24713E006DC436 /* AppDelegate.swift */,
-				DA91AECF1F2474A3006DC436 /* HomeViewController.swift */,
+				DA81B9121F25E53F00C7817E /* ViewController */,
+				DA81B9111F25E53D00C7817E /* Model */,
 				DA91AEC11F24713E006DC436 /* Main.storyboard */,
-				DA91AED11F2474C1006DC436 /* PlayViewController.swift */,
-				DA91AED31F2474F1006DC436 /* HistoryViewController.swift */,
 				DA91AEC41F24713E006DC436 /* Assets.xcassets */,
 				DA91AEC61F24713E006DC436 /* LaunchScreen.storyboard */,
 				DA91AEC91F24713E006DC436 /* Info.plist */,
@@ -146,6 +168,8 @@
 				DA91AEBE1F24713E006DC436 /* AppDelegate.swift in Sources */,
 				DA91AED21F2474C1006DC436 /* PlayViewController.swift in Sources */,
 				DA91AED01F2474A3006DC436 /* HomeViewController.swift in Sources */,
+				DA81B90E1F25D40400C7817E /* Record.swift in Sources */,
+				DA81B9101F25DBA200C7817E /* RecordStore.swift in Sources */,
 				DA91AED41F2474F1006DC436 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

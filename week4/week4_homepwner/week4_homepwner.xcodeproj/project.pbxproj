@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA790A7C1F285591004C0E04 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA790A7B1F285591004C0E04 /* DetailViewController.swift */; };
 		DA91AE541F1C72EA006DC436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91AE531F1C72EA006DC436 /* AppDelegate.swift */; };
 		DA91AE591F1C72EA006DC436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA91AE571F1C72EA006DC436 /* Main.storyboard */; };
 		DA91AE5B1F1C72EA006DC436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA91AE5A1F1C72EA006DC436 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA790A7B1F285591004C0E04 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		DA91AE501F1C72EA006DC436 /* week4_homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week4_homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA91AE531F1C72EA006DC436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA91AE581F1C72EA006DC436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,16 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				DA91AE531F1C72EA006DC436 /* AppDelegate.swift */,
-				DA91AE651F1C733D006DC436 /* ItemViewController.swift */,
-				DA91AE8D1F1DE3D5006DC436 /* ItemCell.swift */,
-				DA91AE671F1C740E006DC436 /* Item.swift */,
-				DA91AE691F1C79B0006DC436 /* ItemStore.swift */,
+				DAF958831F25B46F004C2027 /* View */,
+				DAF958821F25B451004C2027 /* Model */,
+				DAF9587F1F25B402004C2027 /* ViewController */,
 				DA91AE571F1C72EA006DC436 /* Main.storyboard */,
 				DA91AE5A1F1C72EA006DC436 /* Assets.xcassets */,
 				DA91AE5C1F1C72EA006DC436 /* LaunchScreen.storyboard */,
 				DA91AE5F1F1C72EA006DC436 /* Info.plist */,
 			);
 			path = week4_homepwner;
+			sourceTree = "<group>";
+		};
+		DAF9587F1F25B402004C2027 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA91AE651F1C733D006DC436 /* ItemViewController.swift */,
+				DA790A7B1F285591004C0E04 /* DetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		DAF958821F25B451004C2027 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA91AE691F1C79B0006DC436 /* ItemStore.swift */,
+				DA91AE671F1C740E006DC436 /* Item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DAF958831F25B46F004C2027 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA91AE8D1F1DE3D5006DC436 /* ItemCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +176,7 @@
 				DA91AE541F1C72EA006DC436 /* AppDelegate.swift in Sources */,
 				DA91AE681F1C740E006DC436 /* Item.swift in Sources */,
 				DA91AE6A1F1C79B0006DC436 /* ItemStore.swift in Sources */,
+				DA790A7C1F285591004C0E04 /* DetailViewController.swift in Sources */,
 				DA91AE661F1C733D006DC436 /* ItemViewController.swift in Sources */,
 				DA91AE8E1F1DE3D5006DC436 /* ItemCell.swift in Sources */,
 			);
